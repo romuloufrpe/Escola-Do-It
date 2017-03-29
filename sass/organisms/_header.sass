@@ -12,22 +12,10 @@ header
 		height: 45px
 		+gradient(90deg, $vermelho, $azul)
 
-	background:
-		image: url('../imagens/topo_a.jpg')
-		position: top center
-		repeat: no-repeat
-		color: $vermelho
-		attachment: fixed
-		size: cover
-
-
 	.logo
 		float: left
 		margin: 30px 0 0
-		//img
-		//	width:
-		//	height:
-
+		
 
 	.links
 		float: right
@@ -36,11 +24,14 @@ header
 		nav,
 		.social
 			display: inline-block
+
 		nav
 			+breakpoint($tablet)
 				display: none
+
 			+breakpoint($celular)
 				display: none
+
 			ul
 				li
 					display: inline-block
@@ -49,6 +40,19 @@ header
 						color: $branco
 						text-transform: uppercase
 
+						&:hover
+							&:after
+								width: 40%
+
+						&:after
+							content: ""
+							display: table
+							margin: 5px auto 0
+							width: 0%
+							height: 2px
+							background-color: $branco
+							+transition(.3s)
+
 		.social
 			li
 				display: inline-block
@@ -56,7 +60,7 @@ header
 				a
 					color: $branco
 					display: block
-					border: 2px solid #fff
+					border: 1px solid $branco
 					padding: 4px
 					width: 25px
 					height: 25px
@@ -64,6 +68,18 @@ header
 					text-align: center
 					+border-radius(120px)
 
-	h1
+		h1
+			clear: both
+			margin: 190px auto 30px auto !important
+			font-weight: $light
+			border: 3px solid $branco
+			padding: 20px
+			display: table
+			+breakpoint($celular)
+				+font-size(40px)
 
-	p
+		h1,
+		p
+			color: $branco
+			text-align: center
+			text-transform: uppercase

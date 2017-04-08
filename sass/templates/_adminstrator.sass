@@ -8,7 +8,7 @@ header
 	background:
 		position: top center
 		repeat: no-repeat
-		color: $azul
+		color: $laranja
 
 	h1
 		margin-top: 120px !important
@@ -23,3 +23,20 @@ header
 	margin: 30px auto 0 auto
 	clear: both
 	background-color: transparent
+  
+
+.crud
+
+  form
+    +clearfix
+    +make-sm-column(8)
+    +make-sm-column-offset(2)
+    margin-top: 40px
+
+
+
+    .cols
+      +make-row
+
+    .col
+      +make-sm-column(8)

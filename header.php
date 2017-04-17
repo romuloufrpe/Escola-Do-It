@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <head>
 	<meta charset="UTF-8">
-	<title>Do it!</title>
+	<title> <?php bloginfo('name'); ?> </title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/<?php echo $style; ?>.css">
-	<link rel="stylesheet" href="css/geral.css">
-	<link rel="stylesheet" href="bower_components/wow/css/libs/animate.css">
-	<link rel="stylesheet" href="css/plugins.css">
+	<link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/<?php echo $style; ?>.css">
+	<link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/geral.css">
+	<link rel="stylesheet" href="<?php bloginfo('template_url');?>/bower_components/wow/css/libs/animate.css">
+	<link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/plugins.css">
 </head>
 <body>
 
@@ -17,8 +17,8 @@
 	<header>
 		<div class="container">
 			<div class="logo wow slideInLeft" data-wow-duration="1s" data-wow-delay="1s">
-				<a href="index.html">
-					<img src="imagens/logo-topo.png" alt="logo topo">
+				<a href="<?php bloginfo('url'); ?>">
+					<img src="<?php bloginfo('template_url'); ?>/imagens/logo-topo.png" alt="logo topo">
 				</a>
 			</div>
 

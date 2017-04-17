@@ -3,7 +3,7 @@
 						<div class="itens">
 
 							<div class="foto wow flipInX" data-wow-duration="1s" data-wow-delay="5s">
-									<img src="imagens/graduando-miolo.png"/>
+									<img src="<?php bloginfo('template_url'); ?>/imagens/graduando-miolo.png"/>
 							</div>
 
 							<div class="icone-lapis wow flipInX" data-wow-duration="1s" data-wow-delay="1s">

@@ -1,8 +1,5 @@
 <nav>
-  <ul>
-    <li><a href="index.php">Ínicio</a></li>
-    <li><a href="sobre.php">Sobre</a></li>
-    <li><a href="area_aluno.php">Área do Aluno</a></li>
-    <li><a href="contato.php">Contato</a></li>
-  </ul>
+  <?php wp_nav_menu(
+    array('theme_location' => 'header-menu')
+  ); ?>
 </nav>

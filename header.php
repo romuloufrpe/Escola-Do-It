@@ -12,6 +12,17 @@
 
 	<?php include ('includes/organisms/menu-responsive.php'); ?>
 
+	<style>
+		 <?php if(get_the_post_thumbnail()): ?>
+		 			header {
+						background-image: url('<?php the_post_thumbnail_url(); ?>');
+					}
+		 <?php else: ?>
+				 header {
+					 background-image: url('<?php bloginfo('template_url');?>/imagens/fundo-pagina-sobre.png');
+				 }
+		 <?php endif; ?>
+	</style>
 	<div class="layout">
 
 	<header>

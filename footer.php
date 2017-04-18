@@ -15,6 +15,13 @@
 
 <script src="<?php bloginfo('template_url'); ?>/bower_components/jquery/dist/jquery.min.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/bower_components/wow/dist/wow.min.js"></script>
+
+<?php if(is_front_page()) : ?>
+  <script src="<?php bloginfo('template_url');?>/bower_components/slick-carousel/slick/slick.min.js">
+
+  </script>
+<?php endif; ?>
+
 <script>
 $(function(){
   $('.toggle').click(function(){
@@ -24,7 +31,7 @@ $(function(){
   });
   new WOW().init();
 });
-</script>
-
+  </script>
+<?php wp_footer(); ?>
 </body>
 </html>

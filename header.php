@@ -3,10 +3,16 @@
 	<meta charset="UTF-8">
 	<title> <?php bloginfo('name'); ?> </title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/<?php echo $style; ?>.css">
+	<link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/<?php global $style; echo $style; ?>.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/geral.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_url');?>/bower_components/wow/css/libs/animate.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/plugins.css">
+	<?php if(is_front_page()) : ?>
+		<link rel="stylesheet" href="<?php bloginfo('template_url');?>/bower_components/slick-carousel/slick/slick-theme.css">
+		<link rel="stylesheet" href="<?php bloginfo('template_url');?>/bower_components/slick-carousel/slick/slick.css">
+	<?php endif; ?>
+
+	<?php wp_head(); ?>
 </head>
 <body>
 
